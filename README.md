@@ -1,9 +1,9 @@
 # Programacion-Web 1
 ## Alumnos
-## Dylan Bernardi
-## Alexandra Mendoza
-## Natalia Fernanda Hiporre
-## Luis Calegari
+## Dylan Bernardi Rodriguez, DNI: 43048493
+## Alexandra Mendoza, DNI: 40240501
+## Natalia Fernanda Hiporre, DNI: 39977996
+## Luis Calegari, DNI: 41027148
 Nuestra pagina sera de un restaurante:
 
 Tendra apartados de inicio, contacto, menu, locales y demas.
