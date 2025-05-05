@@ -2,41 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/styles.css">
     <title>El mirasol</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./src/css/Inicio.css">
 </head>
 <body>
 
     <header>
-        <nav class="nav">
-            <img src="src/img/logo.png" alt="Logo">
-            <a class="nav__link" href="#">Inicio</a>
-            <a class="nav__link" href="#">Locales</a>
-            <a class="nav__link" href="#">Menu</a>
-            <a class="nav__link" href="#">Contacto</a>
+        <img class="logo" src="./src/img/logo.png" alt="Logo">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Locales</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
         </nav>
-       
     </header>
 
     <main>
+        <section class="HeroSection">
+            <img class="HeroImg" src="src/img/bg.jpg" alt="Imagen del local">
+            <h2 class="HeroText">¡Bienvenidos al Mirasol!</h2>
+        </section>
 
-        <article>
-            <img class="img" src="src/img/bg.jpg" alt="Imagen del local">
-            <h2>Contenido</h2>
-        </article>
+        <section id="AboutSection">
+            <h2 class="Title">Sobre Nosotros</h2>
+            <div class="AboutContainer">
+                <p class="WhiteP">¡Bienvenidos a nuestro rincón gastronómico en el corazón de Capital Federal! Nos apasiona crear experiencias culinarias memorables, fusionando sabores auténticos con un toque moderno. Ya sea para una cena íntima, un encuentro con amigos o una celebración especial, nuestro equipo se dedica a brindarte un servicio excepcional y una experiencia que querrás repetir. ¡Te esperamos para compartir momentos deliciosos!
+                </p>
+                <img src="src/img/Mirasol.jpg" alt="Imagen del local" class="HeroImg">
+            </div>
+        </section>
+
+        <section id="MenuSection">
+            <h2 class="Title">Nuestro Menu</h2>
+            <div class="CarruselMenu">
+                <img class="HeroImg" src="src/img/chef.jpg">
+            </div>
+       
+        </section>
+
+        <section id="ChefSection">
+            <h2 class="Title">Los mejores chefs de la region!</h2>
+            <div class="ChefContainer">
+                <p class="WhiteP">Contamos con algunos de los mejores chefs de Argentina, incluso con algunas celebridades que quiza conozcan!</p>
+                <img src="src/img/chef.jpg" alt="Imagen del local" class="HeroImg">    
+            </div>
+        </section>
+
+        <section id="SedesSection">
+            <h2 class="Title">Pueden encontrarnos en estas sedes</h2>
+            <div class="SedesContainer">
+                <div class="CarruselMenu">
+                    <img src="src/img/chef.jpg" alt="Imagen del local" class="HeroImg">    
+                    <img src="src/img/chef.jpg" alt="Imagen del local" class="HeroImg">    
+                    <img src="src/img/chef.jpg" alt="Imagen del local" class="HeroImg">    
+                
+                </div>
+            </div>
+        </section>
     </main>
-
     <aside>
-        <h3>Sidebar</h3>
-        <ul>
-          
-        </ul>
     </aside>
 
     <footer >
-        <p>Todos los derechos reservados, grupo 2&copy; 2025</p>
+        <p>Todos los derechos reservados, grupo 2 &copy;2025</p>
     </footer>
+    <script src="./src/js/main.js"></script>
 
 </body>
 </html>
+    
+  
