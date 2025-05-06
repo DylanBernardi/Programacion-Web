@@ -1,81 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El mirasol</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./src/css/Inicio.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./src/css/Inicio.css" />
+  </head>
 
+  <body>
     <header>
-        <img class="logo" src="./src/img/logo.png" alt="Logo">
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-        <nav class="nav" id="nav">
-            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
-            <ul class="nav-list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Locales</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+      <a href="#"> <img class="logo" src="./src/img/logo.png" alt="Logo" /></a>
+      <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+      <nav class="nav" id="nav">
+        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+        <ul class="nav-list">
+          <li class="link"><a href="#">Inicio</a></li>
+          <li class="link"><a href="#SedesSection">Locales</a></li>
+          <li class="link"><a href="#MenuSection">Menu</a></li>
+          <li class="link"><a href="#ContactoSection">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="HeroSection">
-            <img class="HeroImg" src="src/img/bg.jpg" alt="Imagen del local">
-            <h2 class="HeroText">¡Bienvenidos al Mirasol!</h2>
-        </section>
+      <section class="HeroSection">
+        <img class="HeroImg" src="src/img/bg2.jpg" alt="Imagen del local" />
+        <h2 class="HeroText">¡Bienvenidos al Mirasol!</h2>
+      </section>
 
-        <section id="AboutSection">
-            <h2 class="Title">Sobre Nosotros</h2>
-            <div class="AboutContainer">
-                <p class="WhiteP">¡Bienvenidos a nuestro rincón gastronómico en el corazón de Capital Federal! Nos apasiona crear experiencias culinarias memorables, fusionando sabores auténticos con un toque moderno. Ya sea para una cena íntima, un encuentro con amigos o una celebración especial, nuestro equipo se dedica a brindarte un servicio excepcional y una experiencia que querrás repetir. ¡Te esperamos para compartir momentos deliciosos!
-                </p>
-                <img src="src/img/Mirasol.jpg" alt="Imagen del local" class="HeroImg">
-            </div>
-        </section>
+      <section id="AboutSection">
+        <h2 class="Title">Sobre Nosotros</h2>
+        <div class="AboutContainer">
+          <p class="WhiteP">
+            ¡Bienvenidos a nuestro rincón gastronómico en el corazón de Capital
+            Federal! Nos apasiona crear experiencias culinarias memorables,
+            fusionando sabores auténticos con un toque moderno. Ya sea para una
+            cena íntima, un encuentro con amigos o una celebración especial,
+            nuestro equipo se dedica a brindarte un servicio excepcional y una
+            experiencia que querrás repetir!
+          </p>
+          <img
+            src="src/img/Mirasol.jpg"
+            alt="Imagen del local"
+            class="HeroImg"
+          />
+        </div>
+      </section>
 
-        <section id="MenuSection">
-            <h2 class="Title">Nuestro Menu</h2>
-            <div class="CarruselMenu">
-                <img class="HeroImg" src="src/img/chef.jpg">
+      <section id="MenuSection">
+        <h2 class="Title">Checkea nuestro menu!</h2>
+        <div class="CarruselMain">
+          <button class="Anterior">❮</button>
+          <div class="ContenedorCarrusel">
+            <div class="DivCarrusel">
+              <img src="src/img/menu1.jpg" alt="Imagen 1" />
+              <p class="TextoCarrusel TextoMenu">Milanesas de pollo</p>
             </div>
-       
-        </section>
 
-        <section id="ChefSection">
-            <h2 class="Title">Los mejores chefs de la region!</h2>
-            <div class="ChefContainer">
-                <p class="WhiteP">Contamos con algunos de los mejores chefs de Argentina, incluso con algunas celebridades que quiza conozcan!</p>
-                <img src="src/img/chef.jpg" alt="Imagen del local" class="HeroImg">    
+            <div class="DivCarrusel">
+              <img src="src/img/menu2.png" alt="Imagen 2" />
+              <p class="TextoCarrusel TextoMenu">Pizzas de todo tipo</p>
             </div>
-        </section>
 
-        <section id="SedesSection">
-            <h2 class="Title">Pueden encontrarnos en estas sedes</h2>
-            <div class="SedesContainer">
-                <div class="CarruselMenu">
-                    <img src="src/img/chef.jpg" alt="Imagen del local" class="HeroImg">    
-                    <img src="src/img/chef.jpg" alt="Imagen del local" class="HeroImg">    
-                    <img src="src/img/chef.jpg" alt="Imagen del local" class="HeroImg">    
-                
-                </div>
+            <div class="DivCarrusel">
+              <img src="src/img/menu3.jpg" alt="Imagen 3" />
+              <p class="TextoCarrusel TextoMenu">Empanadas 100% caseras</p>
             </div>
-        </section>
+
+            <div class="DivCarrusel">
+              <img src="src/img/menu4.jpeg" alt="Imagen 4" />
+              <p class="TextoCarrusel TextoMenu">Ravioles de varios gustos</p>
+            </div>
+
+            <div class="DivCarrusel">
+              <img src="src/img/menu5.webp" alt="Imagen 5" />
+              <p class="TextoCarrusel TextoMenu">Los mejores cortes de carne</p>
+            </div>
+
+            <div class="DivCarrusel">
+              <img src="src/img/menu6.webp" alt="Imagen 6" />
+              <p class="TextoCarrusel TextoMenu">
+                Las hamburguesas mas grandes
+              </p>
+            </div>
+          </div>
+          <button class="Siguiente">❯</button>
+        </div>
+      </section>
+
+      <section id="ChefSection">
+        <h2 class="Title">El restaurante donde cenan las estrellas!</h2>
+        <div class="ChefContainer">
+          <p class="WhiteP">
+            Muchas celebridades argentinas se han pasado por nuestro restaurante
+          </p>
+          <img src="src/img/guest.jpg" alt="Imagen del local" class="HeroImg" />
+        </div>
+      </section>
+
+      <section id="SedesSection">
+        <h2 class="Title">Pueden encontrarnos en estas sedes</h2>
+        <div class="CarruselMain">
+          <button class="Anterior">❮</button>
+          <div class="ContenedorCarrusel">
+            <div class="DivCarrusel">
+              <img src="src/img/Sede1.jpg" alt="Imagen 1" />
+              <p class="TextoCarrusel"><b>Ubicacion: </b>Merlo</p>
+              <p class="TextoCarrusel"><b>Telefono: </b>1123457692</p>
+            </div>
+
+            <div class="DivCarrusel">
+              <img src="src/img/Sede3.webp" alt="Imagen 3" />
+              <p class="TextoCarrusel"><b>Ubicacion: </b>Padua</p>
+              <p class="TextoCarrusel"><b>Telefono: </b>1123567122</p>
+            </div>
+
+            <div class="DivCarrusel">
+              <img src="src/img/Sede2.webp" alt="Imagen 2" />
+              <p class="TextoCarrusel"><b>Ubicacion: </b>Mariano Acosta</p>
+              <p class="TextoCarrusel"><b>Telefono: </b>1145645172</p>
+            </div>
+          </div>
+          <button class="Siguiente">❯</button>
+        </div>
+      </section>
+
+      <section id="ContactoSection">
+        <h2 class="Title">Contactanos!</h2>
+        <div class="ContactoContainer">
+          <p class="WhiteP">
+            Si deseas contactarnos, puedes hacerlo a traves de nuestras redes
+            sociales o por telefono!
+          </p>
+          <form action="#" class="formulario">
+            <label for="Email"><b>Tu Email</b></label>
+            <input name="Email" type="text" placeholder="Email" />
+            <label for="Mensaje"><b>Escribe tu mensaje</b></label>
+            <textarea name="Mensaje" placeholder="Mensaje"></textarea>
+            <input type="submit" value="Enviar" class="submit" />
+          </form>
+        </div>
+      </section>
     </main>
-    <aside>
-    </aside>
 
-    <footer >
-        <p>Todos los derechos reservados, grupo 2 &copy;2025</p>
+    <footer>
+      <p>Todos los derechos reservados, grupo 2 &copy;2025</p>
     </footer>
-    <script src="./src/js/main.js"></script>
 
-</body>
+    <script src="./src/js/main.js"></script>
+  </body>
 </html>
-    
-  
