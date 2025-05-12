@@ -355,5 +355,10 @@ footer {
 
   .SecondHero {
     height: 40rem;
+    width: 100%;
+  }
+
+  .HeroImg {
+    width: 100%;
   }
 }
