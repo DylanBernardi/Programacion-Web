@@ -28,8 +28,8 @@
     </header>
 
     <main>
-      <section class="HeroSection">
-        <img class="HeroImg" src="src/img/bg2.jpg" alt="Imagen del local" />
+      <section id="HeroSection">
+        <img class="HeroImg" src="src/img/bg.jpg" alt="Imagen del local" />
         <h2 class="HeroText">¡Bienvenidos al Mirasol!</h2>
       </section>
 
@@ -44,11 +44,7 @@
             nuestro equipo se dedica a brindarte un servicio excepcional y una
             experiencia que querrás repetir!
           </p>
-          <img
-            src="src/img/Mirasol.jpg"
-            alt="Imagen del local"
-            class="HeroImg"
-          />
+          <img src="src/img/Mirasol.jpg" alt="Imagen del local" class="Img" />
         </div>
       </section>
 
@@ -91,15 +87,32 @@
           </div>
           <button class="Siguiente">❯</button>
         </div>
+        <!---Iconos-->
+        <img src="src/img/hamb.png" class="Icon IconBottomRight" />
+        <img src="src/img/glass.png" class="Icon IconTopRight" />
+        <img src="src/img/chef.png" class="Icon IconBottomLeft" />
+        <img src="src/img/rest.png" class="Icon IconTopLeft" />
       </section>
 
       <section id="ChefSection">
+        <img src="src/img/hamb.png" class="Icon IconTopRight" />
         <h2 class="Title">El restaurante donde cenan las estrellas!</h2>
         <div class="ChefContainer">
+          <img src="src/img/guest.jpg" alt="Imagen del local" class="Img" />
           <p class="WhiteP">
-            Muchas celebridades argentinas se han pasado por nuestro restaurante
+            Muchas celebridades argentinas se han pasado por nuestro
+            restaurante! Ven a conocer el lugar donde cenan las estrellas!
           </p>
-          <img src="src/img/guest.jpg" alt="Imagen del local" class="HeroImg" />
+        </div>
+      </section>
+
+      <section id="MeatSection">
+        <img class="HeroImg SecondHero" src="src/img/meat.jpg" />
+        <div class="MeatDiv">
+          <h2 class="HeroText SecondText">
+            En el <b>Mirasol</b> encontraras los mejores cortes de carne,
+            cocinados a la perfeccion por nuestros mejores chefs.
+          </h2>
         </div>
       </section>
 
@@ -128,6 +141,11 @@
           </div>
           <button class="Siguiente">❯</button>
         </div>
+        <!---Iconos-->
+        <img src="src/img/hamb.png" class="Icon IconTopRight" />
+        <img src="src/img/chef.png" class="Icon IconTopLeft" />
+        <img src="src/img/rest.png" class="Icon IconBottomLeft" />
+        <img src="src/img/glass.png" class="Icon IconBottomRight" />
       </section>
 
       <section id="ContactoSection">
@@ -135,16 +153,18 @@
         <div class="ContactoContainer">
           <p class="WhiteP">
             Si deseas contactarnos, puedes hacerlo a traves de nuestras redes
-            sociales o por telefono!
+            sociales, por telefono o puedes enviarnos un mail aqui!
           </p>
           <form action="#" class="formulario">
-            <label for="Email"><b>Tu Email</b></label>
-            <input name="Email" type="text" placeholder="Email" />
+            <label for="Email"><b>Tu E-mail</b></label>
+            <input name="Email" type="text" />
             <label for="Mensaje"><b>Escribe tu mensaje</b></label>
-            <textarea name="Mensaje" placeholder="Mensaje"></textarea>
+            <textarea name="Mensaje"></textarea>
             <input type="submit" value="Enviar" class="submit" />
           </form>
         </div>
+        <img src="src/img/hamb.png" class="Icon IconBottomRight" />
+        <img src="src/img/chef.png" class="Icon IconBottomLeft" />
       </section>
     </main>
 
