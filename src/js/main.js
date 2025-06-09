@@ -32,9 +32,8 @@ document.querySelectorAll(".CarruselMain").forEach((CarruselMain) => {
 
   function actualizarCarrusel() {
     const width = CarruselMain.clientWidth;
-    ContenedorCarrusel.style.transform = `translateX(-${
-      currentIndex * width
-    }px)`;
+    ContenedorCarrusel.style.transform = `translateX(-${currentIndex * width
+      }px)`;
   }
 
   function SiguienteImagen() {
@@ -60,3 +59,25 @@ document.querySelectorAll(".CarruselMain").forEach((CarruselMain) => {
     AutoMover = setInterval(SiguienteImagen, 5000);
   });
 });
+
+const toggleThemeBtn = document.getElementById("toggle-theme");
+
+function updateThemeIcon() {
+  if (document.body.classList.contains("light-mode")) {
+    toggleThemeBtn.textContent = "🌙"; // Ícono de luna para modo claro
+  } else {
+    toggleThemeBtn.textContent = "🌞"; // Ícono de sol para modo oscuro
+  }
+}
+
+toggleThemeBtn.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+  localStorage.setItem("theme", document.body.classList.contains("light-mode") ? "light" : "dark");
+  updateThemeIcon(); // Actualizar el icono después del cambio
+});
+
+// Mantener el tema e icono seleccionado al recargar la página
+if (localStorage.getItem("theme") === "light") {
+  document.body.classList.add("light-mode");
+  updateThemeIcon();
+}
